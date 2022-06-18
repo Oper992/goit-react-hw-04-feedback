@@ -39,12 +39,12 @@ export function App() {
         <FeedbackOptions onLeaveFeedback={addState} />
       </Section>
       <Section title="Statistics">
-        {this.countTotalFeedback() ? (
+        {countTotalFeedback() ? (
           <Statistics
             good={good}
             neutral={neutral}
             bad={bad}
-            total={this.countTotalFeedback()}
+            total={countTotalFeedback()}
             positivePercentage={PositiveFeedbackPercentage()}
           />
         ) : (
