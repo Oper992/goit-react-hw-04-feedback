@@ -38,7 +38,7 @@ export function App() {
       <Section title="Please leave feedback">
         <FeedbackOptions
           onLeaveFeedback={addState}
-          options={['good', 'neutral', 'bad']}
+          options={Object.keys({ good, neutral, bad })}
         />
       </Section>
       <Section title="Statistics">
