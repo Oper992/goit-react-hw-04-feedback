@@ -36,7 +36,10 @@ export function App() {
   return (
     <div>
       <Section title="Please leave feedback">
-        <FeedbackOptions onLeaveFeedback={addState} />
+        <FeedbackOptions
+          onLeaveFeedback={addState}
+          options={['good', 'neutral', 'bad']}
+        />
       </Section>
       <Section title="Statistics">
         {countTotalFeedback() ? (
